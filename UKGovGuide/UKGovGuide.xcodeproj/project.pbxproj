@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		591582892B0B3B3A007C75E3 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591582882B0B3B3A007C75E3 /* EndpointType.swift */; };
+		5915828B2B0B3B74007C75E3 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915828A2B0B3B74007C75E3 /* HttpService.swift */; };
+		5915828D2B0B3B99007C75E3 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915828C2B0B3B99007C75E3 /* DataParser.swift */; };
+		5915828F2B0B3BC3007C75E3 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915828E2B0B3BC3007C75E3 /* Pageable.swift */; };
+		591582922B0B3C39007C75E3 /* AgencyAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591582912B0B3C38007C75E3 /* AgencyAPIEndpoint.swift */; };
+		591582942B0B3C86007C75E3 /* AgencyHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591582932B0B3C86007C75E3 /* AgencyHttpService.swift */; };
+		591582962B0B3CC2007C75E3 /* AgencyPaginationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591582952B0B3CC2007C75E3 /* AgencyPaginationService.swift */; };
+		5915829B2B0B51C1007C75E3 /* AgencyPaginationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591582972B0B51C0007C75E3 /* AgencyPaginationServiceImpl.swift */; };
+		5915829C2B0B51C1007C75E3 /* HttpServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591582982B0B51C0007C75E3 /* HttpServiceImpl.swift */; };
+		5915829D2B0B51C1007C75E3 /* JsonDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591582992B0B51C1007C75E3 /* JsonDataParser.swift */; };
+		5915829E2B0B51C1007C75E3 /* AgencyHttpServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5915829A2B0B51C1007C75E3 /* AgencyHttpServiceImpl.swift */; };
+		5919E4472B0C8B3200A70CD5 /* AgencyDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919E4462B0C8B3200A70CD5 /* AgencyDataPresenter.swift */; };
+		5919E4492B0C8B4F00A70CD5 /* AgencyDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919E4482B0C8B4F00A70CD5 /* AgencyDataInteractor.swift */; };
+		5919E44B2B0C981900A70CD5 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919E44A2B0C981900A70CD5 /* AppEnvironment.swift */; };
+		5919E4542B0C9A9D00A70CD5 /* JsonDataParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919E44E2B0C9A9D00A70CD5 /* JsonDataParserTests.swift */; };
+		5919E4552B0C9A9D00A70CD5 /* AgencyPaginationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919E44F2B0C9A9D00A70CD5 /* AgencyPaginationServiceTests.swift */; };
+		5919E4562B0C9A9D00A70CD5 /* APIEndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919E4512B0C9A9D00A70CD5 /* APIEndPointTests.swift */; };
+		5919E4572B0C9A9D00A70CD5 /* AgencyDataPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919E4532B0C9A9D00A70CD5 /* AgencyDataPresenterTests.swift */; };
+		5919E4592B0CD01D00A70CD5 /* HttpServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919E4582B0CD01D00A70CD5 /* HttpServiceTests.swift */; };
+		592B4CE72B0745DF00524DA6 /* UKGovGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4CE62B0745DF00524DA6 /* UKGovGuideApp.swift */; };
+		592B4CE92B0745DF00524DA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4CE82B0745DF00524DA6 /* ContentView.swift */; };
+		592B4CEB2B0745E300524DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 592B4CEA2B0745E300524DA6 /* Assets.xcassets */; };
+		592B4CEE2B0745E300524DA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 592B4CED2B0745E300524DA6 /* Preview Assets.xcassets */; };
+		592B4CF82B0745E400524DA6 /* UKGovGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4CF72B0745E400524DA6 /* UKGovGuideTests.swift */; };
+		592B4D022B0745E400524DA6 /* UKGovGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D012B0745E400524DA6 /* UKGovGuideUITests.swift */; };
+		592B4D042B0745E400524DA6 /* UKGovGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D032B0745E400524DA6 /* UKGovGuideUITestsLaunchTests.swift */; };
+		592B4D1B2B074D4C00524DA6 /* AgenciesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D1A2B074D4C00524DA6 /* AgenciesListView.swift */; };
+		592B4D1D2B074D5D00524DA6 /* AgenciesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D1C2B074D5D00524DA6 /* AgenciesDetailView.swift */; };
+		592B4D202B074E0200524DA6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D1F2B074E0200524DA6 /* WebView.swift */; };
+		592B4D222B074E3C00524DA6 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D212B074E3C00524DA6 /* ActivityIndicatorView.swift */; };
+		592B4D242B074EE800524DA6 /* UIViewRepresentables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D232B074EE800524DA6 /* UIViewRepresentables.swift */; };
+		592B4D262B074FBC00524DA6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D252B074FBC00524DA6 /* LoadingView.swift */; };
+		592B4D2A2B07514300524DA6 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D292B07514300524DA6 /* DependencyInjector.swift */; };
+		592B4D2C2B07518900524DA6 /* InteractorsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D2B2B07518900524DA6 /* InteractorsContainer.swift */; };
+		592B4D2E2B0751AA00524DA6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D2D2B0751AA00524DA6 /* AppState.swift */; };
+		592B4D312B076D8E00524DA6 /* AgencyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D302B076D8E00524DA6 /* AgencyDTO.swift */; };
+		592B4D332B076EE600524DA6 /* AgencyPresenationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B4D322B076EE600524DA6 /* AgencyPresenationData.swift */; };
+		592B4D392B076FF000524DA6 /* GovAgencyDTOJsonPage4.json in Resources */ = {isa = PBXBuildFile; fileRef = 592B4D342B076FF000524DA6 /* GovAgencyDTOJsonPage4.json */; };
+		592B4D3A2B076FF000524DA6 /* GovAgencyDTOJsonPage2.json in Resources */ = {isa = PBXBuildFile; fileRef = 592B4D352B076FF000524DA6 /* GovAgencyDTOJsonPage2.json */; };
+		592B4D3B2B076FF000524DA6 /* GovAgencyDTOJsonPage1.json in Resources */ = {isa = PBXBuildFile; fileRef = 592B4D362B076FF000524DA6 /* GovAgencyDTOJsonPage1.json */; };
+		592B4D3C2B076FF000524DA6 /* GovAgencyDTOJsonPage5.json in Resources */ = {isa = PBXBuildFile; fileRef = 592B4D372B076FF000524DA6 /* GovAgencyDTOJsonPage5.json */; };
+		592B4D3D2B076FF000524DA6 /* GovAgencyDTOJsonPage3.json in Resources */ = {isa = PBXBuildFile; fileRef = 592B4D382B076FF000524DA6 /* GovAgencyDTOJsonPage3.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		592B4CF42B0745E400524DA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 592B4CDB2B0745DF00524DA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 592B4CE22B0745DF00524DA6;
+			remoteInfo = UKGovGuide;
+		};
+		592B4CFE2B0745E400524DA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 592B4CDB2B0745DF00524DA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 592B4CE22B0745DF00524DA6;
+			remoteInfo = UKGovGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		591582882B0B3B3A007C75E3 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		5915828A2B0B3B74007C75E3 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		5915828C2B0B3B99007C75E3 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		5915828E2B0B3BC3007C75E3 /* Pageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
+		591582912B0B3C38007C75E3 /* AgencyAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyAPIEndpoint.swift; sourceTree = "<group>"; };
+		591582932B0B3C86007C75E3 /* AgencyHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyHttpService.swift; sourceTree = "<group>"; };
+		591582952B0B3CC2007C75E3 /* AgencyPaginationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyPaginationService.swift; sourceTree = "<group>"; };
+		591582972B0B51C0007C75E3 /* AgencyPaginationServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgencyPaginationServiceImpl.swift; sourceTree = "<group>"; };
+		591582982B0B51C0007C75E3 /* HttpServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServiceImpl.swift; sourceTree = "<group>"; };
+		591582992B0B51C1007C75E3 /* JsonDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDataParser.swift; sourceTree = "<group>"; };
+		5915829A2B0B51C1007C75E3 /* AgencyHttpServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgencyHttpServiceImpl.swift; sourceTree = "<group>"; };
+		5919E4462B0C8B3200A70CD5 /* AgencyDataPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgencyDataPresenter.swift; sourceTree = "<group>"; };
+		5919E4482B0C8B4F00A70CD5 /* AgencyDataInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgencyDataInteractor.swift; sourceTree = "<group>"; };
+		5919E44A2B0C981900A70CD5 /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		5919E44E2B0C9A9D00A70CD5 /* JsonDataParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDataParserTests.swift; sourceTree = "<group>"; };
+		5919E44F2B0C9A9D00A70CD5 /* AgencyPaginationServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgencyPaginationServiceTests.swift; sourceTree = "<group>"; };
+		5919E4512B0C9A9D00A70CD5 /* APIEndPointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndPointTests.swift; sourceTree = "<group>"; };
+		5919E4532B0C9A9D00A70CD5 /* AgencyDataPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgencyDataPresenterTests.swift; sourceTree = "<group>"; };
+		5919E4582B0CD01D00A70CD5 /* HttpServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpServiceTests.swift; sourceTree = "<group>"; };
+		5919E45A2B0DC3C600A70CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		592B4CE32B0745DF00524DA6 /* UKGovGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UKGovGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		592B4CE62B0745DF00524DA6 /* UKGovGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKGovGuideApp.swift; sourceTree = "<group>"; };
+		592B4CE82B0745DF00524DA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		592B4CEA2B0745E300524DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		592B4CED2B0745E300524DA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		592B4CF32B0745E400524DA6 /* UKGovGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UKGovGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		592B4CF72B0745E400524DA6 /* UKGovGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKGovGuideTests.swift; sourceTree = "<group>"; };
+		592B4CFD2B0745E400524DA6 /* UKGovGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UKGovGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		592B4D012B0745E400524DA6 /* UKGovGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKGovGuideUITests.swift; sourceTree = "<group>"; };
+		592B4D032B0745E400524DA6 /* UKGovGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKGovGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		592B4D1A2B074D4C00524DA6 /* AgenciesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesListView.swift; sourceTree = "<group>"; };
+		592B4D1C2B074D5D00524DA6 /* AgenciesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenciesDetailView.swift; sourceTree = "<group>"; };
+		592B4D1F2B074E0200524DA6 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		592B4D212B074E3C00524DA6 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		592B4D232B074EE800524DA6 /* UIViewRepresentables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentables.swift; sourceTree = "<group>"; };
+		592B4D252B074FBC00524DA6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		592B4D292B07514300524DA6 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		592B4D2B2B07518900524DA6 /* InteractorsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorsContainer.swift; sourceTree = "<group>"; };
+		592B4D2D2B0751AA00524DA6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		592B4D302B076D8E00524DA6 /* AgencyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyDTO.swift; sourceTree = "<group>"; };
+		592B4D322B076EE600524DA6 /* AgencyPresenationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyPresenationData.swift; sourceTree = "<group>"; };
+		592B4D342B076FF000524DA6 /* GovAgencyDTOJsonPage4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GovAgencyDTOJsonPage4.json; sourceTree = "<group>"; };
+		592B4D352B076FF000524DA6 /* GovAgencyDTOJsonPage2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GovAgencyDTOJsonPage2.json; sourceTree = "<group>"; };
+		592B4D362B076FF000524DA6 /* GovAgencyDTOJsonPage1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GovAgencyDTOJsonPage1.json; sourceTree = "<group>"; };
+		592B4D372B076FF000524DA6 /* GovAgencyDTOJsonPage5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GovAgencyDTOJsonPage5.json; sourceTree = "<group>"; };
+		592B4D382B076FF000524DA6 /* GovAgencyDTOJsonPage3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GovAgencyDTOJsonPage3.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		592B4CE02B0745DF00524DA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592B4CF02B0745E400524DA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592B4CFA2B0745E400524DA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		590BAA042B089B9B00EF7F5F /* Mocked */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D362B076FF000524DA6 /* GovAgencyDTOJsonPage1.json */,
+				592B4D352B076FF000524DA6 /* GovAgencyDTOJsonPage2.json */,
+				592B4D382B076FF000524DA6 /* GovAgencyDTOJsonPage3.json */,
+				592B4D342B076FF000524DA6 /* GovAgencyDTOJsonPage4.json */,
+				592B4D372B076FF000524DA6 /* GovAgencyDTOJsonPage5.json */,
+			);
+			path = Mocked;
+			sourceTree = "<group>";
+		};
+		591582862B0B3A8D007C75E3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				591582872B0B3A9C007C75E3 /* Protocols */,
+				591582902B0B3BEA007C75E3 /* ConcreteTypes */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		591582872B0B3A9C007C75E3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				591582882B0B3B3A007C75E3 /* EndpointType.swift */,
+				5915828C2B0B3B99007C75E3 /* DataParser.swift */,
+				5915828A2B0B3B74007C75E3 /* HttpService.swift */,
+				5915828E2B0B3BC3007C75E3 /* Pageable.swift */,
+				591582932B0B3C86007C75E3 /* AgencyHttpService.swift */,
+				591582952B0B3CC2007C75E3 /* AgencyPaginationService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		591582902B0B3BEA007C75E3 /* ConcreteTypes */ = {
+			isa = PBXGroup;
+			children = (
+				5915829A2B0B51C1007C75E3 /* AgencyHttpServiceImpl.swift */,
+				591582972B0B51C0007C75E3 /* AgencyPaginationServiceImpl.swift */,
+				591582982B0B51C0007C75E3 /* HttpServiceImpl.swift */,
+				591582992B0B51C1007C75E3 /* JsonDataParser.swift */,
+				591582912B0B3C38007C75E3 /* AgencyAPIEndpoint.swift */,
+			);
+			path = ConcreteTypes;
+			sourceTree = "<group>";
+		};
+		5915829F2B0B5989007C75E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D322B076EE600524DA6 /* AgencyPresenationData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5919E4442B0C8AE300A70CD5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5919E4462B0C8B3200A70CD5 /* AgencyDataPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5919E4452B0C8AF900A70CD5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5919E4482B0C8B4F00A70CD5 /* AgencyDataInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5919E44C2B0C9A9D00A70CD5 /* NetworkLayerMocking */ = {
+			isa = PBXGroup;
+			children = (
+				5919E44D2B0C9A9D00A70CD5 /* MockedServices */,
+				5919E4502B0C9A9D00A70CD5 /* MockAPIs */,
+			);
+			path = NetworkLayerMocking;
+			sourceTree = "<group>";
+		};
+		5919E44D2B0C9A9D00A70CD5 /* MockedServices */ = {
+			isa = PBXGroup;
+			children = (
+				5919E44E2B0C9A9D00A70CD5 /* JsonDataParserTests.swift */,
+				5919E44F2B0C9A9D00A70CD5 /* AgencyPaginationServiceTests.swift */,
+				5919E4582B0CD01D00A70CD5 /* HttpServiceTests.swift */,
+			);
+			path = MockedServices;
+			sourceTree = "<group>";
+		};
+		5919E4502B0C9A9D00A70CD5 /* MockAPIs */ = {
+			isa = PBXGroup;
+			children = (
+				5919E4512B0C9A9D00A70CD5 /* APIEndPointTests.swift */,
+			);
+			path = MockAPIs;
+			sourceTree = "<group>";
+		};
+		5919E4522B0C9A9D00A70CD5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5919E4532B0C9A9D00A70CD5 /* AgencyDataPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		592B4CDA2B0745DF00524DA6 = {
+			isa = PBXGroup;
+			children = (
+				592B4CE52B0745DF00524DA6 /* UKGovGuide */,
+				592B4CF62B0745E400524DA6 /* UKGovGuideTests */,
+				592B4D002B0745E400524DA6 /* UKGovGuideUITests */,
+				592B4CE42B0745DF00524DA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		592B4CE42B0745DF00524DA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				592B4CE32B0745DF00524DA6 /* UKGovGuide.app */,
+				592B4CF32B0745E400524DA6 /* UKGovGuideTests.xctest */,
+				592B4CFD2B0745E400524DA6 /* UKGovGuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		592B4CE52B0745DF00524DA6 /* UKGovGuide */ = {
+			isa = PBXGroup;
+			children = (
+				5919E45A2B0DC3C600A70CD5 /* Info.plist */,
+				592B4D272B0750FD00524DA6 /* Injected */,
+				592B4D282B07511400524DA6 /* System */,
+				592B4D132B0749A500524DA6 /* Core */,
+				592B4D122B07467A00524DA6 /* DataAccess */,
+				592B4D112B07467200524DA6 /* Domain */,
+				592B4D102B07465E00524DA6 /* Presentation */,
+				592B4CE62B0745DF00524DA6 /* UKGovGuideApp.swift */,
+				592B4CE82B0745DF00524DA6 /* ContentView.swift */,
+				592B4CEA2B0745E300524DA6 /* Assets.xcassets */,
+				592B4CEC2B0745E300524DA6 /* Preview Content */,
+			);
+			path = UKGovGuide;
+			sourceTree = "<group>";
+		};
+		592B4CEC2B0745E300524DA6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				592B4CED2B0745E300524DA6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		592B4CF62B0745E400524DA6 /* UKGovGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				5919E44C2B0C9A9D00A70CD5 /* NetworkLayerMocking */,
+				5919E4522B0C9A9D00A70CD5 /* Presenter */,
+				592B4CF72B0745E400524DA6 /* UKGovGuideTests.swift */,
+			);
+			path = UKGovGuideTests;
+			sourceTree = "<group>";
+		};
+		592B4D002B0745E400524DA6 /* UKGovGuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D012B0745E400524DA6 /* UKGovGuideUITests.swift */,
+				592B4D032B0745E400524DA6 /* UKGovGuideUITestsLaunchTests.swift */,
+			);
+			path = UKGovGuideUITests;
+			sourceTree = "<group>";
+		};
+		592B4D102B07465E00524DA6 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D162B074C9E00524DA6 /* Views */,
+				592B4D142B074C8300524DA6 /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		592B4D112B07467200524DA6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5919E4452B0C8AF900A70CD5 /* Interactor */,
+				5919E4442B0C8AE300A70CD5 /* Presenter */,
+				5915829F2B0B5989007C75E3 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		592B4D122B07467A00524DA6 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				591582862B0B3A8D007C75E3 /* Service */,
+				590BAA042B089B9B00EF7F5F /* Mocked */,
+				592B4D2F2B0751D700524DA6 /* DTO */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		592B4D132B0749A500524DA6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		592B4D142B074C8300524DA6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D252B074FBC00524DA6 /* LoadingView.swift */,
+				592B4D1E2B074DD400524DA6 /* UIViewRepresentable */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		592B4D162B074C9E00524DA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D172B074CB700524DA6 /* Agencies */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		592B4D172B074CB700524DA6 /* Agencies */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D192B074CE500524DA6 /* List */,
+				592B4D182B074CDB00524DA6 /* Detail */,
+			);
+			path = Agencies;
+			sourceTree = "<group>";
+		};
+		592B4D182B074CDB00524DA6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D1C2B074D5D00524DA6 /* AgenciesDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		592B4D192B074CE500524DA6 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D1A2B074D4C00524DA6 /* AgenciesListView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		592B4D1E2B074DD400524DA6 /* UIViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D232B074EE800524DA6 /* UIViewRepresentables.swift */,
+				592B4D1F2B074E0200524DA6 /* WebView.swift */,
+				592B4D212B074E3C00524DA6 /* ActivityIndicatorView.swift */,
+			);
+			path = UIViewRepresentable;
+			sourceTree = "<group>";
+		};
+		592B4D272B0750FD00524DA6 /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D292B07514300524DA6 /* DependencyInjector.swift */,
+				592B4D2B2B07518900524DA6 /* InteractorsContainer.swift */,
+				592B4D2D2B0751AA00524DA6 /* AppState.swift */,
+			);
+			path = Injected;
+			sourceTree = "<group>";
+		};
+		592B4D282B07511400524DA6 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				5919E44A2B0C981900A70CD5 /* AppEnvironment.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		592B4D2F2B0751D700524DA6 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				592B4D302B076D8E00524DA6 /* AgencyDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		592B4CE22B0745DF00524DA6 /* UKGovGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 592B4D072B0745E400524DA6 /* Build configuration list for PBXNativeTarget "UKGovGuide" */;
+			buildPhases = (
+				592B4CDF2B0745DF00524DA6 /* Sources */,
+				592B4CE02B0745DF00524DA6 /* Frameworks */,
+				592B4CE12B0745DF00524DA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UKGovGuide;
+			productName = UKGovGuide;
+			productReference = 592B4CE32B0745DF00524DA6 /* UKGovGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		592B4CF22B0745E400524DA6 /* UKGovGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 592B4D0A2B0745E400524DA6 /* Build configuration list for PBXNativeTarget "UKGovGuideTests" */;
+			buildPhases = (
+				592B4CEF2B0745E400524DA6 /* Sources */,
+				592B4CF02B0745E400524DA6 /* Frameworks */,
+				592B4CF12B0745E400524DA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				592B4CF52B0745E400524DA6 /* PBXTargetDependency */,
+			);
+			name = UKGovGuideTests;
+			productName = UKGovGuideTests;
+			productReference = 592B4CF32B0745E400524DA6 /* UKGovGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		592B4CFC2B0745E400524DA6 /* UKGovGuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 592B4D0D2B0745E400524DA6 /* Build configuration list for PBXNativeTarget "UKGovGuideUITests" */;
+			buildPhases = (
+				592B4CF92B0745E400524DA6 /* Sources */,
+				592B4CFA2B0745E400524DA6 /* Frameworks */,
+				592B4CFB2B0745E400524DA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				592B4CFF2B0745E400524DA6 /* PBXTargetDependency */,
+			);
+			name = UKGovGuideUITests;
+			productName = UKGovGuideUITests;
+			productReference = 592B4CFD2B0745E400524DA6 /* UKGovGuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		592B4CDB2B0745DF00524DA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					592B4CE22B0745DF00524DA6 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					592B4CF22B0745E400524DA6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 592B4CE22B0745DF00524DA6;
+					};
+					592B4CFC2B0745E400524DA6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 592B4CE22B0745DF00524DA6;
+					};
+				};
+			};
+			buildConfigurationList = 592B4CDE2B0745DF00524DA6 /* Build configuration list for PBXProject "UKGovGuide" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 592B4CDA2B0745DF00524DA6;
+			productRefGroup = 592B4CE42B0745DF00524DA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				592B4CE22B0745DF00524DA6 /* UKGovGuide */,
+				592B4CF22B0745E400524DA6 /* UKGovGuideTests */,
+				592B4CFC2B0745E400524DA6 /* UKGovGuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		592B4CE12B0745DF00524DA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592B4CEE2B0745E300524DA6 /* Preview Assets.xcassets in Resources */,
+				592B4D3A2B076FF000524DA6 /* GovAgencyDTOJsonPage2.json in Resources */,
+				592B4D3C2B076FF000524DA6 /* GovAgencyDTOJsonPage5.json in Resources */,
+				592B4CEB2B0745E300524DA6 /* Assets.xcassets in Resources */,
+				592B4D3B2B076FF000524DA6 /* GovAgencyDTOJsonPage1.json in Resources */,
+				592B4D392B076FF000524DA6 /* GovAgencyDTOJsonPage4.json in Resources */,
+				592B4D3D2B076FF000524DA6 /* GovAgencyDTOJsonPage3.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592B4CF12B0745E400524DA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592B4CFB2B0745E400524DA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		592B4CDF2B0745DF00524DA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591582892B0B3B3A007C75E3 /* EndpointType.swift in Sources */,
+				592B4D332B076EE600524DA6 /* AgencyPresenationData.swift in Sources */,
+				5915829E2B0B51C1007C75E3 /* AgencyHttpServiceImpl.swift in Sources */,
+				5915828D2B0B3B99007C75E3 /* DataParser.swift in Sources */,
+				5915828F2B0B3BC3007C75E3 /* Pageable.swift in Sources */,
+				592B4D1D2B074D5D00524DA6 /* AgenciesDetailView.swift in Sources */,
+				5919E4492B0C8B4F00A70CD5 /* AgencyDataInteractor.swift in Sources */,
+				592B4D2A2B07514300524DA6 /* DependencyInjector.swift in Sources */,
+				591582922B0B3C39007C75E3 /* AgencyAPIEndpoint.swift in Sources */,
+				5915829D2B0B51C1007C75E3 /* JsonDataParser.swift in Sources */,
+				592B4D222B074E3C00524DA6 /* ActivityIndicatorView.swift in Sources */,
+				592B4CE92B0745DF00524DA6 /* ContentView.swift in Sources */,
+				592B4D312B076D8E00524DA6 /* AgencyDTO.swift in Sources */,
+				592B4D1B2B074D4C00524DA6 /* AgenciesListView.swift in Sources */,
+				591582942B0B3C86007C75E3 /* AgencyHttpService.swift in Sources */,
+				591582962B0B3CC2007C75E3 /* AgencyPaginationService.swift in Sources */,
+				592B4D202B074E0200524DA6 /* WebView.swift in Sources */,
+				5919E44B2B0C981900A70CD5 /* AppEnvironment.swift in Sources */,
+				5919E4472B0C8B3200A70CD5 /* AgencyDataPresenter.swift in Sources */,
+				592B4D2E2B0751AA00524DA6 /* AppState.swift in Sources */,
+				5915829B2B0B51C1007C75E3 /* AgencyPaginationServiceImpl.swift in Sources */,
+				592B4D2C2B07518900524DA6 /* InteractorsContainer.swift in Sources */,
+				592B4D262B074FBC00524DA6 /* LoadingView.swift in Sources */,
+				592B4CE72B0745DF00524DA6 /* UKGovGuideApp.swift in Sources */,
+				5915829C2B0B51C1007C75E3 /* HttpServiceImpl.swift in Sources */,
+				592B4D242B074EE800524DA6 /* UIViewRepresentables.swift in Sources */,
+				5915828B2B0B3B74007C75E3 /* HttpService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592B4CEF2B0745E400524DA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5919E4542B0C9A9D00A70CD5 /* JsonDataParserTests.swift in Sources */,
+				5919E4552B0C9A9D00A70CD5 /* AgencyPaginationServiceTests.swift in Sources */,
+				592B4CF82B0745E400524DA6 /* UKGovGuideTests.swift in Sources */,
+				5919E4592B0CD01D00A70CD5 /* HttpServiceTests.swift in Sources */,
+				5919E4562B0C9A9D00A70CD5 /* APIEndPointTests.swift in Sources */,
+				5919E4572B0C9A9D00A70CD5 /* AgencyDataPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592B4CF92B0745E400524DA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592B4D042B0745E400524DA6 /* UKGovGuideUITestsLaunchTests.swift in Sources */,
+				592B4D022B0745E400524DA6 /* UKGovGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		592B4CF52B0745E400524DA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 592B4CE22B0745DF00524DA6 /* UKGovGuide */;
+			targetProxy = 592B4CF42B0745E400524DA6 /* PBXContainerItemProxy */;
+		};
+		592B4CFF2B0745E400524DA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 592B4CE22B0745DF00524DA6 /* UKGovGuide */;
+			targetProxy = 592B4CFE2B0745E400524DA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		592B4D052B0745E400524DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		592B4D062B0745E400524DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		592B4D082B0745E400524DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UKGovGuide/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UKGovGuide/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PS.UKGovGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		592B4D092B0745E400524DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UKGovGuide/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UKGovGuide/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PS.UKGovGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		592B4D0B2B0745E400524DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PS.UKGovGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UKGovGuide.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UKGovGuide";
+			};
+			name = Debug;
+		};
+		592B4D0C2B0745E400524DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PS.UKGovGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UKGovGuide.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UKGovGuide";
+			};
+			name = Release;
+		};
+		592B4D0E2B0745E400524DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PS.UKGovGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UKGovGuide;
+			};
+			name = Debug;
+		};
+		592B4D0F2B0745E400524DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PS.UKGovGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UKGovGuide;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		592B4CDE2B0745DF00524DA6 /* Build configuration list for PBXProject "UKGovGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592B4D052B0745E400524DA6 /* Debug */,
+				592B4D062B0745E400524DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		592B4D072B0745E400524DA6 /* Build configuration list for PBXNativeTarget "UKGovGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592B4D082B0745E400524DA6 /* Debug */,
+				592B4D092B0745E400524DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		592B4D0A2B0745E400524DA6 /* Build configuration list for PBXNativeTarget "UKGovGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592B4D0B2B0745E400524DA6 /* Debug */,
+				592B4D0C2B0745E400524DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		592B4D0D2B0745E400524DA6 /* Build configuration list for PBXNativeTarget "UKGovGuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592B4D0E2B0745E400524DA6 /* Debug */,
+				592B4D0F2B0745E400524DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 592B4CDB2B0745DF00524DA6 /* Project object */;
+}

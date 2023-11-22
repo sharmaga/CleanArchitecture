@@ -273,7 +273,6 @@
 				5919E45A2B0DC3C600A70CD5 /* Info.plist */,
 				592B4D272B0750FD00524DA6 /* Injected */,
 				592B4D282B07511400524DA6 /* System */,
-				592B4D132B0749A500524DA6 /* Core */,
 				592B4D122B07467A00524DA6 /* DataAccess */,
 				592B4D112B07467200524DA6 /* Domain */,
 				592B4D102B07465E00524DA6 /* Presentation */,
@@ -339,13 +338,6 @@
 				592B4D2F2B0751D700524DA6 /* DTO */,
 			);
 			path = DataAccess;
-			sourceTree = "<group>";
-		};
-		592B4D132B0749A500524DA6 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		592B4D142B074C8300524DA6 /* Components */ = {
